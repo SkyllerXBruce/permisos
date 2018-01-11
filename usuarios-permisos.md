@@ -139,15 +139,19 @@ Hay 2 cosas importantes que tener en cuenta
 
 Sintaxis de ejecucion del comando 
 
-> Comando **pertenecia-orden-permiso** fichero/directorio
-> 
-> chmod **ug+rw** reporte.doc
-> 
-> chmod **uo-x mi-imagen.jpg
-> 
-> chmod u=rwx,o=r prueba
+| Comando | pertenecia-orden-permiso | fichero/directorio |
+|-----|-----|
+| chmod | **ug+rw** | reporte.doc |
 
 #### Ejemplos
+
+> chmod **uo-x** mi-imagen.jpg
+> 
+> chmod **u=rwx,o=r** prueba.c
+> 
+> chmod **u=rx,g+w,o-r** application.py
+> 
+> chmod **u=rwx,go=rx** Compartir/
 
 [1]: Imagenes/ok.png
 [2]: Imagenes/duda.png
