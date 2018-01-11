@@ -1,4 +1,4 @@
-## Gestionar Usuarios y Permisos en Linux ##
+## Gestionar Permisos de Ficheros o Directorios en Linux  a Nivel Usuario##
 
 #### Introducción
 
@@ -37,11 +37,7 @@ Tipos de usuarios:
 	* Cada usuario puede personalizar su entorno de trabajo.
 	* Tienen solo privilegios completos en su directorio de trabajo o HOME.
 
-Un Sistema **Multiusuario** permite que dos o más usuarios utilicen sus programas al mismo tiempo.
-
-¿Como modifico (**"limito el acceso"**) a los ficheros de determinado directorio/carpeta?
-
-![Duda][2]
+Un Sistema **Multiusuario** permite que dos o más usuarios utilicen sus programas.
 
 #### Permisos
 
@@ -73,65 +69,39 @@ Estos privilegios se establecen para todos los directorios del sistema incluyend
 
 * los *usuarios* que no pertenecen al *grupo* de trabajo, pero que pertenecen a **otros grupos de trabajo**, se les denomina **resto de usuarios (Otros)** del sistema.
 
-#### Comandos utiles
+### Comandos utiles
 
-* ¿Cómo puedo ver en qué usuario estoy?
-* ¿Cómo puedo ver a qué grupo pertenesco?
-* ¿Cómo sé qué permisos tienen mis ficheros o directorios?
-* ¿Cómo puedo usar la información anterior?
-
-#### Ver Usuarios
+#### ¿Cómo puedo ver en qué usuario estoy?
 
 Comando **whoami** .- Es el comando utilizado para mostrar el nombre de *usuario* actual.
 > $ whoami
+> 
 > paul
 
 Comando **users** .- Es el comando utilizado para mostrar los nombres de *usuario* **conectados** a la computadora actual.
 > $ users
+> 
 > alexis johan paul
 
-#### Ver Grupos
+#### ¿Cómo puedo ver a qué grupo pertenesco?
 
 Comando **groups** .- Muestra los grupos a los que pertenece el *usuario* actual.
 
 > $ groups paul 
+> 
 > paul : paul profesores uami proyecto
 
-#### Ver Permisos de Ficheros o Directorios
+#### ¿Cómo sé qué permisos tienen mis ficheros o directorios?
 
 Comando **ls -l** .- El Comando **ls** Muestra el listado del directorio actual; si le añadimos la opcion **-l** nos permite listar la información de permisos, usuario, grupo, tamaño, fecha de modificaión entre otras caracteristicas más, del directorio actual.
 
 > ls -l 
+> 
 ![ls][3]
 
-Analicemos: 
+Analicemos este ejemplo: 
 
 ![ls-secciones][4]
-
-Analizemos un ejemplo: 
-
- drwxr-xr-x 2  bruce  bruce  4096  dic  28  06:30   Público
- -rw-rw-r\--  1  bruce  bruce  1239  ene 8   00:04   referencia.c
-
-**Mascara de ficheros o directorios (Formato de Permisos)**
-> **drwxr-xr-x** 2  bruce  bruce  4096  dic  28  06:30   Público
-> **-rw-rw-r\--**  1  bruce  bruce  1239  ene 8  00:04   referencia.c
-
-**Usuario y Grupo**
-> drwxr-xr-x 2  **bruce  bruce**  4096  dic  28  06:30   Público
-> -rw-rw-r\--  1  **bruce  bruce**  1239  ene 8  00:04   referencia.c
-
-**Tamaño en bytes**
-> drwxr-xr-x 2  bruce  bruce  **4096**  dic  28  06:30   Público
-> -rw-rw-r\--  1  bruce  bruce  **1239**  ene 8  00:04   referencia.c
-
-**Fecha y Hora**
-> drwxr-xr-x 2  bruce  bruce  4096  **dic  28  06:30**   Público
-> -rw-rw-r\--  1  bruce  bruce  1239  **ene 8  00:04**   referencia.c
-
-**Nombre del Fichero o Directorio**
-> drwxr-xr-x 2  bruce  bruce  4096  dic  28  06:30  **Público**
-> -rw-rw-r\--  1  bruce  bruce  1239  ene 8  00:04   **referencia.c**
 
 Observemos la Mascara(Permisos) 
 
@@ -147,22 +117,35 @@ Observemos la Mascara(Permisos)
 | c | Caracter Especial |
 | b | bloque |
 
-¿Como cambiar los pemisos?
+¿Como modifico **permisos** a los ficheros de determinado directorio/carpeta?
+
+![Duda][2]
 
 Comanado **chmod** .- Es el comando que cambia los permisos de los ficheros y directorios.
 
 Hay 2 cosas importantes que tener en cuenta
 
-|Simbolo de Pertenencia | Orden |
-|----- | ------|
-| Usuario (u) proviene de user | + añade |
-| Grupo (g) proviene de group | - quita |
-| Otros (o) proviene de other | = asigna |
+|Simbolo de Pertenencia |
+|----- | 
+| Usuario (u) proviene de user | 
+| Grupo (g) proviene de group |
+| Otros (o) proviene de other |
 
-Estructura de ejecucion del comando 
+| Orden |
+| ------- |
+| + añade |
+|  - quita |
+| = asigna(reescribe) |
+
+Sintaxis de ejecucion del comando 
 
 > Comando **pertenecia-orden-permiso** fichero/directorio
-> chmod **ug-rw** reporte.doc
+> 
+> chmod **ug+rw** reporte.doc
+> 
+> chmod **uo-x mi-imagen.jpg
+> 
+> chmod u=rwx,o=r prueba
 
 #### Ejemplos
 
