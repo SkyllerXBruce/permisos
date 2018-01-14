@@ -99,11 +99,11 @@ Comando **ls -l** .- El Comando **ls** Muestra el listado del directorio actual;
 > 
 ![ls][3]
 
-Analicemos este ejemplo: 
+#### Analicemos este ejemplo: 
 
 ![ls-secciones][4]
 
-Observemos la Mascara(Permisos) 
+#### Observemos la Mascara(Permisos) 
 
 ![permisos][5]
 
