@@ -155,6 +155,6 @@ Sintaxis de ejecucion del comando
 
 [1]: Imagenes/ok.png
 [2]: Imagenes/duda.png
-[3]: Imagenes/ls.jpg
-[4]: Imagenes/ls-secciones.jpg 
+[3]: Imagenes/ls.png
+[4]: Imagenes/ls-secciones.png 
 [5]: Imagenes/permisos.jpg
