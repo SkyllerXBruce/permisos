@@ -19,7 +19,7 @@ Primero:
 Tipos de usuarios:
 
 * usuario **root** (El todo poderoso)
-	* Administrador del sitema
+	* Administrador del sistema
 	* Acceso total a todos los archivos y directorios
 	* Controla la administración de cuentas de usuarios
 	* Tiene privilegios sobre todo el sistema 
@@ -43,7 +43,7 @@ Un Sistema **Multiusuario** permite que dos o más usuarios utilicen sus program
 
 A todo fichero o directorio en un sistema Linux se le asocian permisos en tres aspectos:
 
-| Permiso | Descripcion | simbolo |
+| Permiso | Descripción | símbolo |
 | :------: | :-------: | :------: |
 | lectura | Accede al contenido para poder ver el contenido | r |
 | Escritura | Modifica el Contenido del fichero | w |
@@ -69,7 +69,7 @@ Estos privilegios se establecen para todos los directorios del sistema incluyend
 
 * los *usuarios* que no pertenecen al *grupo* de trabajo, pero que pertenecen a **otros grupos de trabajo**, se les denomina **resto de usuarios (Otros)** del sistema.
 
-### Comandos utiles
+### Comandos útiles
 
 #### ¿Cómo puedo ver en qué usuario estoy?
 
@@ -83,7 +83,7 @@ Comando **users** .- Es el comando utilizado para mostrar los nombres de *usuari
 > 
 > alexis johan paul
 
-#### ¿Cómo puedo ver a qué grupo pertenesco?
+#### ¿Cómo puedo ver a qué grupo pertenezco?
 
 Comando **groups** .- Muestra los grupos a los que pertenece el *usuario* actual.
 
@@ -93,7 +93,7 @@ Comando **groups** .- Muestra los grupos a los que pertenece el *usuario* actual
 
 #### ¿Cómo sé qué permisos tienen mis ficheros o directorios?
 
-Comando **ls -l** .- El Comando **ls** Muestra el listado del directorio actual; si le añadimos la opcion **-l** nos permite listar la información de permisos, usuario, grupo, tamaño, fecha de modificaión entre otras caracteristicas más, del directorio actual.
+Comando **ls -l** .- El Comando **ls** Muestra el listado del directorio actual; si le añadimos la opcion **-l** nos permite listar la información de permisos, usuario, grupo, tamaño, fecha de modificación entre otras características más, del directorio actual.
 
 > ls -l 
 > 
@@ -114,7 +114,7 @@ Comando **ls -l** .- El Comando **ls** Muestra el listado del directorio actual;
 | l | Enlace |
 | s | Socket |
 | p | Pipe |
-| c | Caracter Especial |
+| c | Carácter Especial |
 | b | bloque |
 
 ¿Como modifico **permisos** a los ficheros de determinado directorio/carpeta?
@@ -125,7 +125,7 @@ Comanado **chmod** .- Es el comando que cambia los permisos de los ficheros y di
 
 Hay 2 cosas importantes que tener en cuenta
 
-|Simbolo de Pertenencia |
+|Símbolo de Pertenencia |
 |----- | 
 | Usuario (u) proviene de user | 
 | Grupo (g) proviene de group |
@@ -137,7 +137,7 @@ Hay 2 cosas importantes que tener en cuenta
 |  - quita |
 | = asigna(reescribe) |
 
-Sintaxis de ejecucion del comando 
+Sintaxis de ejecución del comando 
 
 | Comando | pertenecia-orden-permiso | fichero/directorio |
 |-----|-----| ------ |
