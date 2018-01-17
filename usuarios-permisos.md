@@ -25,12 +25,12 @@ Tipos de usuarios:
 	* Tiene privilegios sobre todo el sistema 
 	* Modifica, instala, detiene, reconfigura procesos del sistema.
 * Usuarios **especiales**
-	*  bin, daemon, adm, lp, sync, shutdown, mail, operator, squid, apache, etc.
-	* Se les llama también cuentas del sistema
-	* Asumen distintos privilegios de root dependiendio de la cuenta.
-	* No tienen contraseñas.
+	* bin, daemon, adm, lp, sync, shutdown, mail, operator, squid, apache, etc.
 	* Se les conoce como cuentas de "no inicio de sesión" (nologin).
-	* Se crean (generalmente) automáticamente al momento de la instalación de Linux o de la aplicación.
+	
+	* Asumen distintos privilegios de root dependiendio de la cuenta.
+	* No tienen contraseñas.	
+	* Generalmente se crean automáticamente al momento de la instalación de Linux o de la aplicación.
 * Usuarios **normales**
 	* Se usan para usuarios individuales.
 	* Cada usuario dispone de un directorio de trabajo, ubicado generalmente en /home.
