@@ -26,8 +26,8 @@ Tipos de usuarios:
 	* Modifica, instala, detiene, reconfigura procesos del sistema.
 * Usuarios **especiales**
 	* bin, daemon, adm, lp, sync, shutdown, mail, operator, squid, apache, etc.
-	* Se les conoce como cuentas de "no inicio de sesión" (nologin).
-	
+	* Se les conoce como cuentas de "no inicio de sesión" (nologin). 
+	* También se les conoce como cuentas del sistema.	
 	* Asumen distintos privilegios de root dependiendio de la cuenta.
 	* No tienen contraseñas.	
 	* Generalmente se crean automáticamente al momento de la instalación de Linux o de la aplicación.
